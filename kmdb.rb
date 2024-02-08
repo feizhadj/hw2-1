@@ -153,10 +153,10 @@ end
 # Query the cast data and loop through the results to display the cast output for each movie.
 # TODO!
 
-# Group characters by movie title
+# Group characters 
 characters_by_movie = Character.includes(:actor, :movie).group_by(&:movie_id)
 
-# Loop through the results to display the cast output for each movie
+# Loop through 
 puts ""
 puts "Top Cast"
 puts "========"
